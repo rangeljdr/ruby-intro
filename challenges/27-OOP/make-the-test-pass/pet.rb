@@ -8,17 +8,26 @@
 # - No cambies el codigo existente, solo añadele cosas.
 
 module Reality
+  @year = 0
+
   def passage_of_time
     p "time passes ..."
     # que mas deberias pasar en este metodo?
+    @year += 1
   end
 end
 
 class Pet
   include Reality
 
+  attr_reader :walked
+
+  def initialize
+    if @walked = walked
+  end
+
   def walked?
-    @walked
+    @walked == "Happy dog" ? true : false
   end
 end
 
@@ -26,3 +35,6 @@ class Dog
   def speak!
   end
 end
+
+fido = Pet.new
+p fido.walked? =

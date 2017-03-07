@@ -14,7 +14,7 @@ Si seguimos estos pasos terminamos con pasta lista para comer.
 
 Para este reto, vamos a necesitar romper un algoritmo en los siguientes pasos:
 
-1. Dobla un numero si y otro no, empezando desde el penultimo, hasta llegar al primer digito.
+1.8. Dobla un numero si y otro no, empezando desde el penultimo, hasta llegar al primer digito.
 
 2. Suma todos los digitos que no modificaste con los que doblaste. (Si hay un numero de 2 digitos tienes que partirlo. 10 se compierte en 1 + 0)
 

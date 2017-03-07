@@ -1,54 +1,66 @@
 class Drawer
 
-attr_reader :contents
+  attr_reader :contents
 
-# Se necesita algun metodo mas en esta clase?
+  # Se necesita algun metodo mas en esta clase?
 
-def initialize
-@contents = []
-@open = true
+  def initialize
+    @contents = []
+    @open = true
+  end
+
+  def open
+    @open = true
+  end
+
+  def close
+    @open = false
+  end
+
+  def add_item(item = @contents)
+    @contents << item
+  end
+
+  def remove_item(item = @contents.pop) #que hace pop?
+    @contents.delete(item)
+  end
+
+  def dump  # que debe devolver este metodo?
+    puts "Your drawer is empty."
+    @contents = []
+    @contents_empty = true
+  end
+
+  def view_contents
+    puts "The drawer contains:"
+    @contents.each {|silverware| puts "- " + silverware.type }
+  end
+
+  def contents_empty?
+    @contents_empty
+  end
+
 end
-
-def open
-@open = true
-end
-
-def close
-@open = false
-end
-
-def add_item
-@contents << item
-end
-
-def remove_item(item = @contents.pop) #que hace pop?
-@contents.delete(item)
-end
-
-def dump  # que debe devolver este metodo?
-puts "Your drawer is empty."
-end
-
-def view_contents
-puts "The drawer contains:"
-@contents.each {|silverware| puts "- " + silverware.type }
-end
-
 
 class Silverware
-attr_reader :type
+  attr_reader :type
 
-# Se necesita algun otro metodo en esta clase?
+  # Se necesita algun otro metodo en esta clase?
 
-def initialize(type, clean = true)
-@type = type
-@clean = clean
-end
+  def initialize(type, clean = true)
+    @type = type
+    @clean = clean
+  end
 
-def eat
-puts "eating with the #{type}"
-@clean = false
-end
+  def eat
+    puts "eating with the #{type}"
+    @clean = false
+  end
+
+  def clean_silverware
+    @clean = true
+  end
+
 
 end
 
@@ -83,6 +95,11 @@ raise Exception.new("Your drawer is not actually empty") unless silverware_drawe
 silverware_drawer.view_contents
 
 # Que necesitas aca para remover una cuchara? puedes modificar el driver code en este error.
+silverware_drawer.add_item(spoon)
+
+silverware_drawer.view_contents
+
+removed_spoon = silverware_drawer.remove_item(spoon)
 raise Exception.new("You don't have a spoon to remove") unless silverware_drawer.contents.include?(spoon)
 
 silverware_drawer.remove_item(spoon) #que pasa aca la primera vez que corre?
