@@ -104,5 +104,3 @@ class RubyRacer
     puts @arr2.join()
   end
 end
-
-  #=========== driver code ===========

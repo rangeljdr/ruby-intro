@@ -49,10 +49,7 @@ class RubyRacer
   # Imprime el tablero actual
   # El tablero siempre debe tener las mismas dimensiones
   # Debes imprimir encima del tablero anterior
-  def print_board
-    puts @arr1.join()
-    puts @arr2.join()
-  end
+
 end
 
 #=========== driver code ===========
