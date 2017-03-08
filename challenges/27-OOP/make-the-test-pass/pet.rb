@@ -32,9 +32,37 @@ class Pet
 end
 
 class Dog
+  def initialize(name)
+    @name = name
+    begin
+      raise ArgumenError.new('Wron name input') if name.is_a?(Fixnum)
+      @name = name
+    rescue
+      @name = 'Default name'
+    end
+  end
   def speak!
   end
 end
 
+<<<<<<< HEAD
 fido = Pet.new
 p fido.walked? =
+=======
+class Person
+  attr_accessor :pets
+
+  def initialize
+    @pets = []
+
+  end
+
+end
+
+
+class Game
+  end
+
+
+g = Game.new(50)
+>>>>>>> upstream/master
