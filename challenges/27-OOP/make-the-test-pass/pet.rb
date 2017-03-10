@@ -45,10 +45,6 @@ class Dog
   end
 end
 
-<<<<<<< HEAD
-fido = Pet.new
-p fido.walked? =
-=======
 class Person
   attr_accessor :pets
 
@@ -65,4 +61,3 @@ class Game
 
 
 g = Game.new(50)
->>>>>>> upstream/master

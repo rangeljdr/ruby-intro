@@ -44,15 +44,3 @@ end
 
 # Pon driver code aca para probar que todo este funcionando.
 ###### DRIVER CODE ########
-
-<<<<<<< HEAD
-my_house = House.new({address: 'Calle 30 #30-30',square_feet: 1_000,num_bedrooms: 2,num_baths: 1,cost: 250_000,down_payment: 0.10,})
-
-p my_house.down_payment
-p my_house.obscure_address
-p my_house.to_s
-=======
-
-
-
->>>>>>> upstream/master

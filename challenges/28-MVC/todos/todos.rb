@@ -8,3 +8,22 @@
 
 # El punto 4 es donde vive la escencia de tu aplicacion.
 # Casi todas las aplicaciones en el universo tienen alguna version de las responsabilidades (1), (2), y (3).w
+
+class List
+
+  attr_accessor :file, :lines
+
+  def initialize
+    @file = File.open("todos.txt", "w+")
+    @lines = lines
+  end
+
+  def reading
+    @file.readlines(file).each do |line|
+      p line
+    end
+  end
+end
+
+list = List.new
+list.reading
