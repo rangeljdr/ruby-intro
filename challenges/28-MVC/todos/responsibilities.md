@@ -12,17 +12,17 @@ I. Responsabilidades & Comandos de la interfaz del usuario
 2. Agregar un todo a la lista                                                          | `list.add(Task.new("walk the dog"))`
 3. Mostrar todos los todos de la lista                                                 | `tasks = list.tasks`
 4. Borrar una tarea en particular de lista                                             | `list.delete(task_id)`
-5. Completar una tarea en particular de la lista                                       | `List.complete(task_id)`
-6. Marcar sin completar una tarea ya completada                                        | `List.
-7. Vaciar toda la lista
+5. Completar una tarea en particular de la lista                                       | `list.complete(task_id)`
+6. Marcar sin completar una tarea ya completada                                        | `list.incomplete(task_id)`
+7. Vaciar toda la lista                                                                | `list.empty`
 
 II. Responsabilidades del back end de la lista
 
-1. Asignarle un ID al todo una vez el todo sea agregado
-2. Reasignar IDs una vez un todo ha sido borrado
-3. Asignarle la fecha de  al todo
+1. Asignarle un ID al todo una vez el todo sea agregado                                | `@task_id`
+2. Reasignar IDs una vez un todo ha sido borrado                                       | `@task_id`
+3. Asignarle la fecha de  al todo                                                      | `@task_date`
 
 II. Responsabilidades del back end
 
-1. Tomar y persear los argumentos de la linea de comando correctamente                   | `???`
-2. Comvertir el archivo de texto o csv en objetos de facil uso en Ruby | `???`
+1. Tomar y persear los argumentos de la linea de comando correctamente                 | `???`
+2. Comvertir el archivo de texto o csv en objetos de facil uso en Ruby                 | `???`
