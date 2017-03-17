@@ -38,4 +38,4 @@ En este tendrás que escribir las migraciones para hacer los cambios que pedimos
 
 ### Paso 1:  Actualiza el esquema
 
-Para completar el reto, tendrás que escribir nuevas migraciones que alteren la base de datos. Puede encontrar pistas acá [RailsGuides](http://guides.rubyonrails.org/migrations.html)
+Para completar el reto, tendrás que escribir nuevas migraciones que alteren la base de datos. Puede encontrar pistas acá [RailsGuides]
